@@ -1,0 +1,22 @@
+## docker
+
+docker build --tag django-auth .
+docker run --publish 8000:8000 django-auth
+
+
+docker-compose build
+docker-compose run --rm app django-admin startproject core .
+docker-compose up
+
+
+docker-compose build
+docker-compose run --rm app django-admin startproject core .
+docker-compose up
+docker exec -it django_container /bin/bash
+
+## project setup
+
+django-admin startproject django_auth .
+
+
+
