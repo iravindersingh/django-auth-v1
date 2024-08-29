@@ -76,7 +76,9 @@ button:hover {
 <form method="post" action="/signup/" style="border:1px solid #ccc">
     {% csrf_token %}
   <div class="container">
-    <h1>Sign Up</h1> {{ error }}
+    <h1>Sign Up</h1>     {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %}
     <p>Please fill in this form to create an account.</p>
     <hr>
 
